@@ -1,0 +1,39 @@
+#
+#THIS IS A SAMPLE SERVER DATA TRAFFIC CONFIGURATION FILE
+#
+# * TO BE USED TO CONFIGURE RESPONSE TO INTERESTS
+# * MULTIPLE SERVER PREFIXES CAN BE CONFIGURED FOR BEING HANDLED
+# * EVERY INIVIDUAL PATTERN DESCRIPTION MUST BE SEPARATED BY ONE
+#   OR MORE '#' CHARACTERS FOR THE TOOL TO DISTINGUISH THEM
+#   INDIVIUDALLY
+# * THE FOLLOWING PARAMETERS MAY BE ADDED FOR EVERY TRAFFIC PATTERN
+# * (Mandatory) NEXT TO A PARAMETER MEANS EVERY PATTERN SHOULD HAVE
+#   IT FOR BEING CONSIDERED VALID
+#   (Optional) MEANS OTHERWISE
+# * ALSO PROVIDED ARE VALID VALUES POSSIBLE FOR EACH PARAMETER
+# * NNI STANDS FOR NON-NEGATIVE INTEGER
+# * RANGE OF POSSIBLE VALUES IS SPECIFIED IN []
+#
+#
+#(Mandatory)
+#Name=NDN Name
+#
+#
+#(Optional)
+#ContentType=NNI [>=0]
+#FreshnessPeriod=NNI [Milliseconds]
+#ContentBytes=NNI [>0]
+#Content=String
+#ContentDelay=NNI [Milliseconds]
+#SigningInfo=String [Ex: signing with a default certificate of a default key for the identity: `id:/my-identity`]
+#
+#
+##########
+Name=/example/A/1
+Content=ZZZZ1
+Name=/example/A/2
+Content=ZZZZ2
+##########
+Name=/example/B
+Content=BBBBBBBB
+##########

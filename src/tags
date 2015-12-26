@@ -1,0 +1,133 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DataTrafficConfiguration	ndn-traffic-server.cpp	/^    DataTrafficConfiguration()$/;"	f	class:ndn::NdnTrafficServer::DataTrafficConfiguration
+DataTrafficConfiguration	ndn-traffic-server.cpp	/^  class DataTrafficConfiguration$/;"	c	class:ndn::NdnTrafficServer	file:
+InterestTrafficConfiguration	ndn-traffic-client.cpp	/^    InterestTrafficConfiguration()$/;"	f	class:ndn::NdnTrafficClient::InterestTrafficConfiguration
+InterestTrafficConfiguration	ndn-traffic-client.cpp	/^  class InterestTrafficConfiguration$/;"	c	class:ndn::NdnTrafficClient	file:
+Logger	logger.hpp	/^  Logger(const std::string& module)$/;"	f	class:ndn::Logger
+Logger	logger.hpp	/^class Logger$/;"	c	namespace:ndn
+NTG_LOGGER_HPP	logger.hpp	22;"	d
+NdnTrafficClient	ndn-traffic-client.cpp	/^  NdnTrafficClient(const char* programName)$/;"	f	class:ndn::NdnTrafficClient
+NdnTrafficClient	ndn-traffic-client.cpp	/^class NdnTrafficClient : boost::noncopyable$/;"	c	namespace:ndn	file:
+NdnTrafficServer	ndn-traffic-server.cpp	/^  NdnTrafficServer(const char* programName)$/;"	f	class:ndn::NdnTrafficServer
+NdnTrafficServer	ndn-traffic-server.cpp	/^class NdnTrafficServer : boost::noncopyable$/;"	c	namespace:ndn	file:
+checkTrafficDetailCorrectness	ndn-traffic-client.cpp	/^    checkTrafficDetailCorrectness()$/;"	f	class:ndn::NdnTrafficClient::InterestTrafficConfiguration
+checkTrafficDetailCorrectness	ndn-traffic-server.cpp	/^    checkTrafficDetailCorrectness()$/;"	f	class:ndn::NdnTrafficServer::DataTrafficConfiguration
+checkTrafficPatternCorrectness	ndn-traffic-client.cpp	/^  checkTrafficPatternCorrectness()$/;"	f	class:ndn::NdnTrafficClient
+checkTrafficPatternCorrectness	ndn-traffic-server.cpp	/^  checkTrafficPatternCorrectness()$/;"	f	class:ndn::NdnTrafficServer
+extractParameterValue	ndn-traffic-client.cpp	/^    extractParameterValue(const std::string& detail, std::string& parameter, std::string& value)$/;"	f	class:ndn::NdnTrafficClient::InterestTrafficConfiguration
+extractParameterValue	ndn-traffic-server.cpp	/^    extractParameterValue(const std::string& detail, std::string& parameter, std::string& value)$/;"	f	class:ndn::NdnTrafficServer::DataTrafficConfiguration
+generateRandomNameComponent	ndn-traffic-client.cpp	/^  generateRandomNameComponent(size_t length)$/;"	f	class:ndn::NdnTrafficClient
+generateTraffic	ndn-traffic-client.cpp	/^  generateTraffic(boost::asio::deadline_timer* timer)$/;"	f	class:ndn::NdnTrafficClient
+getDefaultInterestInterval	ndn-traffic-client.cpp	/^  getDefaultInterestInterval()$/;"	f	class:ndn::NdnTrafficClient
+getDefaultInterestLifetime	ndn-traffic-client.cpp	/^    getDefaultInterestLifetime()$/;"	f	class:ndn::NdnTrafficClient::InterestTrafficConfiguration
+getNewNonce	ndn-traffic-client.cpp	/^  getNewNonce()$/;"	f	class:ndn::NdnTrafficClient
+getOldNonce	ndn-traffic-client.cpp	/^  getOldNonce()$/;"	f	class:ndn::NdnTrafficClient
+getRandomByteString	ndn-traffic-server.cpp	/^  getRandomByteString(std::size_t randomSize)$/;"	f	class:ndn::NdnTrafficServer
+getTimestamp	logger.hpp	/^  getTimestamp()$/;"	f	class:ndn::Logger
+hasError	ndn-traffic-client.cpp	/^  hasError() const$/;"	f	class:ndn::NdnTrafficClient
+hasError	ndn-traffic-server.cpp	/^  hasError() const$/;"	f	class:ndn::NdnTrafficServer
+initializeLog	logger.hpp	/^  initializeLog(const std::string& instanceId)$/;"	f	class:ndn::Logger
+initializeTrafficConfiguration	ndn-traffic-client.cpp	/^  initializeTrafficConfiguration()$/;"	f	class:ndn::NdnTrafficClient
+initializeTrafficConfiguration	ndn-traffic-server.cpp	/^  initializeTrafficConfiguration()$/;"	f	class:ndn::NdnTrafficServer
+log	logger.hpp	/^  log(const std::string& logLine, bool printTime, bool printToConsole)$/;"	f	class:ndn::Logger
+logStatistics	ndn-traffic-client.cpp	/^  logStatistics()$/;"	f	class:ndn::NdnTrafficClient
+logStatistics	ndn-traffic-server.cpp	/^  logStatistics()$/;"	f	class:ndn::NdnTrafficServer
+m_childSelector	ndn-traffic-client.cpp	/^    int m_childSelector;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_configurationFile	ndn-traffic-client.cpp	/^  std::string m_configurationFile;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_configurationFile	ndn-traffic-server.cpp	/^  std::string m_configurationFile;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_content	ndn-traffic-server.cpp	/^    std::string m_content;$/;"	m	class:ndn::NdnTrafficServer::DataTrafficConfiguration	file:
+m_contentBytes	ndn-traffic-server.cpp	/^    int m_contentBytes;$/;"	m	class:ndn::NdnTrafficServer::DataTrafficConfiguration	file:
+m_contentDelay	ndn-traffic-server.cpp	/^    time::milliseconds m_contentDelay;$/;"	m	class:ndn::NdnTrafficServer::DataTrafficConfiguration	file:
+m_contentDelay	ndn-traffic-server.cpp	/^  time::milliseconds m_contentDelay;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_contentType	ndn-traffic-server.cpp	/^    int m_contentType;$/;"	m	class:ndn::NdnTrafficServer::DataTrafficConfiguration	file:
+m_excludeAfter	ndn-traffic-client.cpp	/^    std::string m_excludeAfter;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_excludeAfterBytes	ndn-traffic-client.cpp	/^    int m_excludeAfterBytes;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_excludeBefore	ndn-traffic-client.cpp	/^    std::string m_excludeBefore;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_excludeBeforeBytes	ndn-traffic-client.cpp	/^    int m_excludeBeforeBytes;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_expectedContents	ndn-traffic-client.cpp	/^    std::list<std::string> m_expectedContents;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_face	ndn-traffic-client.cpp	/^  Face m_face;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_face	ndn-traffic-server.cpp	/^  Face m_face;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_freshnessPeriod	ndn-traffic-server.cpp	/^    time::milliseconds m_freshnessPeriod;$/;"	m	class:ndn::NdnTrafficServer::DataTrafficConfiguration	file:
+m_hasError	ndn-traffic-client.cpp	/^  bool m_hasError;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_hasError	ndn-traffic-server.cpp	/^  bool m_hasError;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_hasQuietLogging	ndn-traffic-client.cpp	/^  bool m_hasQuietLogging;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_hasQuietLogging	ndn-traffic-server.cpp	/^  bool m_hasQuietLogging;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_instanceId	ndn-traffic-client.cpp	/^  std::string m_instanceId;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_instanceId	ndn-traffic-server.cpp	/^  std::string m_instanceId;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_interestInterval	ndn-traffic-client.cpp	/^  time::milliseconds m_interestInterval;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_interestLifetime	ndn-traffic-client.cpp	/^    time::milliseconds m_interestLifetime;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_ioService	ndn-traffic-client.cpp	/^  boost::asio::io_service m_ioService;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_ioService	ndn-traffic-server.cpp	/^  boost::asio::io_service m_ioService;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_keyChain	ndn-traffic-server.cpp	/^  KeyChain m_keyChain;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_logFile	logger.hpp	/^  std::ofstream m_logFile;$/;"	m	class:ndn::Logger
+m_logLocation	logger.hpp	/^  std::string m_logLocation;$/;"	m	class:ndn::Logger
+m_logger	ndn-traffic-client.cpp	/^  Logger m_logger;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_logger	ndn-traffic-server.cpp	/^  Logger m_logger;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_maxSuffixComponents	ndn-traffic-client.cpp	/^    int m_maxSuffixComponents;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_maximumInterestRoundTripTime	ndn-traffic-client.cpp	/^    double m_maximumInterestRoundTripTime;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_maximumInterestRoundTripTime	ndn-traffic-client.cpp	/^  double m_maximumInterestRoundTripTime;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_minSuffixComponents	ndn-traffic-client.cpp	/^    int m_minSuffixComponents;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_minimumInterestRoundTripTime	ndn-traffic-client.cpp	/^    double m_minimumInterestRoundTripTime;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_minimumInterestRoundTripTime	ndn-traffic-client.cpp	/^  double m_minimumInterestRoundTripTime;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_module	logger.hpp	/^  std::string m_module;$/;"	m	class:ndn::Logger
+m_mustBeFresh	ndn-traffic-client.cpp	/^    int m_mustBeFresh;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_nContentInconsistencies	ndn-traffic-client.cpp	/^    int m_nContentInconsistencies;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_nContentInconsistencies	ndn-traffic-client.cpp	/^  int m_nContentInconsistencies;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_nInterestsReceived	ndn-traffic-client.cpp	/^    int m_nInterestsReceived;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_nInterestsReceived	ndn-traffic-client.cpp	/^  int m_nInterestsReceived;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_nInterestsReceived	ndn-traffic-server.cpp	/^    int m_nInterestsReceived;$/;"	m	class:ndn::NdnTrafficServer::DataTrafficConfiguration	file:
+m_nInterestsReceived	ndn-traffic-server.cpp	/^  int m_nInterestsReceived;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_nInterestsSent	ndn-traffic-client.cpp	/^    int m_nInterestsSent;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_nInterestsSent	ndn-traffic-client.cpp	/^  int m_nInterestsSent;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_nMaximumInterests	ndn-traffic-client.cpp	/^  int m_nMaximumInterests;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_nMaximumInterests	ndn-traffic-server.cpp	/^  int m_nMaximumInterests;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_nRegistrationsFailed	ndn-traffic-server.cpp	/^  std::size_t m_nRegistrationsFailed;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_name	ndn-traffic-server.cpp	/^    std::string m_name;$/;"	m	class:ndn::NdnTrafficServer::DataTrafficConfiguration	file:
+m_nameAppendBytes	ndn-traffic-client.cpp	/^    int m_nameAppendBytes;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_nameAppendSequenceNumber	ndn-traffic-client.cpp	/^    int m_nameAppendSequenceNumber;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_names	ndn-traffic-client.cpp	/^    std::list<std::string> m_names;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_nonceDuplicationPercentage	ndn-traffic-client.cpp	/^    int m_nonceDuplicationPercentage;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_nonces	ndn-traffic-client.cpp	/^  std::vector<uint32_t> m_nonces;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_programName	ndn-traffic-client.cpp	/^  std::string m_programName;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_programName	ndn-traffic-server.cpp	/^  std::string m_programName;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_signingInfo	ndn-traffic-server.cpp	/^    security::SigningInfo m_signingInfo;$/;"	m	class:ndn::NdnTrafficServer::DataTrafficConfiguration	file:
+m_totalInterestRoundTripTime	ndn-traffic-client.cpp	/^    double m_totalInterestRoundTripTime;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+m_totalInterestRoundTripTime	ndn-traffic-client.cpp	/^  double m_totalInterestRoundTripTime;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_trafficPatterns	ndn-traffic-client.cpp	/^  std::vector<InterestTrafficConfiguration> m_trafficPatterns;$/;"	m	class:ndn::NdnTrafficClient	file:
+m_trafficPatterns	ndn-traffic-server.cpp	/^  std::vector<DataTrafficConfiguration> m_trafficPatterns;$/;"	m	class:ndn::NdnTrafficServer	file:
+m_trafficPercentage	ndn-traffic-client.cpp	/^    int m_trafficPercentage;$/;"	m	class:ndn::NdnTrafficClient::InterestTrafficConfiguration	file:
+main	ndn-traffic-client.cpp	/^main(int argc, char* argv[])$/;"	f
+main	ndn-traffic-server.cpp	/^main(int argc, char* argv[])$/;"	f
+ndn	logger.hpp	/^namespace ndn {$/;"	n
+ndn	ndn-traffic-client.cpp	/^namespace ndn {$/;"	n	file:
+ndn	ndn-traffic-server.cpp	/^namespace ndn {$/;"	n	file:
+onData	ndn-traffic-client.cpp	/^  onData(const ndn::Interest& interest,$/;"	f	class:ndn::NdnTrafficClient
+onInterest	ndn-traffic-server.cpp	/^  onInterest(const Name& name, const Interest& interest, int patternId)$/;"	f	class:ndn::NdnTrafficServer
+onRegisterFailed	ndn-traffic-server.cpp	/^  onRegisterFailed(const ndn::Name& prefix, const std::string& reason, int patternId)$/;"	f	class:ndn::NdnTrafficServer
+onTimeout	ndn-traffic-client.cpp	/^  onTimeout(const ndn::Interest& interest,$/;"	f	class:ndn::NdnTrafficClient
+parseConfigurationFile	ndn-traffic-client.cpp	/^  parseConfigurationFile()$/;"	f	class:ndn::NdnTrafficClient
+parseConfigurationFile	ndn-traffic-server.cpp	/^  parseConfigurationFile()$/;"	f	class:ndn::NdnTrafficServer
+printTrafficConfiguration	ndn-traffic-client.cpp	/^    printTrafficConfiguration(Logger& logger)$/;"	f	class:ndn::NdnTrafficClient::InterestTrafficConfiguration
+printTrafficConfiguration	ndn-traffic-server.cpp	/^    printTrafficConfiguration(Logger& logger)$/;"	f	class:ndn::NdnTrafficServer::DataTrafficConfiguration
+processConfigurationDetail	ndn-traffic-client.cpp	/^    processConfigurationDetail(const std::string& detail, Logger& logger, int lineNumber)$/;"	f	class:ndn::NdnTrafficClient::InterestTrafficConfiguration
+processConfigurationDetail	ndn-traffic-server.cpp	/^    processConfigurationDetail(const std::string& detail,$/;"	f	class:ndn::NdnTrafficServer::DataTrafficConfiguration
+run	ndn-traffic-client.cpp	/^  run()$/;"	f	class:ndn::NdnTrafficClient
+run	ndn-traffic-server.cpp	/^  run()$/;"	f	class:ndn::NdnTrafficServer
+setConfigurationFile	ndn-traffic-client.cpp	/^  setConfigurationFile(char* configurationFile)$/;"	f	class:ndn::NdnTrafficClient
+setConfigurationFile	ndn-traffic-server.cpp	/^  setConfigurationFile(const char* configurationFile)$/;"	f	class:ndn::NdnTrafficServer
+setContentDelay	ndn-traffic-server.cpp	/^  setContentDelay(int contentDelay)$/;"	f	class:ndn::NdnTrafficServer
+setInterestInterval	ndn-traffic-client.cpp	/^  setInterestInterval(int interestInterval)$/;"	f	class:ndn::NdnTrafficClient
+setMaximumInterests	ndn-traffic-client.cpp	/^  setMaximumInterests(int maximumInterests)$/;"	f	class:ndn::NdnTrafficClient
+setMaximumInterests	ndn-traffic-server.cpp	/^  setMaximumInterests(int maximumInterests)$/;"	f	class:ndn::NdnTrafficServer
+setQuietLogging	ndn-traffic-client.cpp	/^  setQuietLogging()$/;"	f	class:ndn::NdnTrafficClient
+setQuietLogging	ndn-traffic-server.cpp	/^  setQuietLogging()$/;"	f	class:ndn::NdnTrafficServer
+shutdownLogger	logger.hpp	/^  shutdownLogger()$/;"	f	class:ndn::Logger
+signalHandler	ndn-traffic-client.cpp	/^  signalHandler()$/;"	f	class:ndn::NdnTrafficClient
+signalHandler	ndn-traffic-server.cpp	/^  signalHandler()$/;"	f	class:ndn::NdnTrafficServer
+usage	ndn-traffic-client.cpp	/^  usage() const$/;"	f	class:ndn::NdnTrafficClient
+usage	ndn-traffic-server.cpp	/^  usage() const$/;"	f	class:ndn::NdnTrafficServer
