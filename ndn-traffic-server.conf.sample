@@ -29,10 +29,11 @@
 #
 #
 ##########
-Name=/example/A/1
-Content=ZZZZ1
-Name=/example/A/2
-Content=ZZZZ2
+TrafficPercentage=50
+Name=/example/A
+ExpectedContent=AAAAAAAA
+Name=/example/Z
+ExpectedContent=ZZZZ
 ##########
 Name=/example/B
 Content=BBBBBBBB
