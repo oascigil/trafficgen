@@ -53,6 +53,7 @@ public:
     , m_nMaximumInterests(-1)
     , m_face(m_ioService)
     , m_nInterestsSent(0)
+    , m_nPatternsSent(0)
     , m_nInterestsReceived(0)
     , m_nContentInconsistencies(0)
     , m_minimumInterestRoundTripTime(std::numeric_limits<double>::max())
@@ -199,7 +200,10 @@ public:
           else if (parameter == "InterestLifetime")
             m_interestLifetime = time::milliseconds(std::stoi(value));
           else if (parameter == "ExpectedContent")
+          {
             m_expectedContents.push_back(value);
+            std::cout << "Reading content value: "<<value<<"\n";
+          }
           else
             logger.log("Line " + to_string(lineNumber) +
                        " \t- Invalid Parameter='" + parameter + "'", false, true);
@@ -545,6 +549,7 @@ public:
         receivedContent = receivedContent.substr(0, receivedContentLength);
         for (i = 0; i < m_trafficPatterns[patternId].m_expectedContents.size(); i++)
         {
+           std::cout <<"Comparing "<<receivedContent<<" with "<<m_trafficPatterns[patternId].m_expectedContents.at(i)<<"\n";
            if (receivedContent == m_trafficPatterns[patternId].m_expectedContents.at(i))
              {
                logLine += ", IsConsistent=Yes";
@@ -606,7 +611,7 @@ public:
   void
   generateTraffic(boost::asio::deadline_timer* timer)
   {
-    if (m_nMaximumInterests < 0 || m_nInterestsSent < m_nMaximumInterests)
+    if (m_nMaximumInterests < 0 || m_nPatternsSent < m_nMaximumInterests)
       {
         int trafficKey = std::rand() % 100;
         int cumulativePercentage = 0;
@@ -616,7 +621,9 @@ public:
             cumulativePercentage += m_trafficPatterns[patternId].m_trafficPercentage;
             if (trafficKey <= cumulativePercentage)
               {
+                 m_nPatternsSent++;
                  std::cout<<"Size of the m_names is "<<m_trafficPatterns[patternId].m_names.size()<<"\n";
+                 bool timer_scheduled = false;
                  for(unsigned int i = 0; i < m_trafficPatterns[patternId].m_names.size(); i++)
                  {
                    //Name interestName(m_trafficPatterns[patternId].m_name);
@@ -711,7 +718,7 @@ public:
                      time::steady_clock::TimePoint sentTime = time::steady_clock::now();
                      m_face.expressInterest(interest,
                                          bind(&NdnTrafficClient::onData,
-                                              this, _1, _2, m_nInterestsSent,
+                                              this, _1, _2, m_nPatternsSent, 
                                               m_trafficPatterns[patternId].m_nInterestsSent,
                                               patternId, sentTime),
                                          bind(&NdnTrafficClient::onTimeout,
@@ -728,10 +735,13 @@ public:
                           ", Name=" + interest.getName().toUri();
                         m_logger.log(logLine, true, false);
                      }
-
-                      timer->expires_at(timer->expires_at() +
+                      if(!timer_scheduled)
+                        {
+                          timer->expires_at(timer->expires_at() +
                                         boost::posix_time::millisec(m_interestInterval.count()));
-                      timer->async_wait(bind(&NdnTrafficClient::generateTraffic, this, timer));
+                          timer->async_wait(bind(&NdnTrafficClient::generateTraffic, this, timer));
+                          timer_scheduled = true;
+                        }
                    }
                    catch (const std::exception& e) {
                      m_logger.log("ERROR: " + std::string(e.what()), true, true);
@@ -793,6 +803,7 @@ private:
   std::vector<InterestTrafficConfiguration> m_trafficPatterns;
   std::vector<uint32_t> m_nonces;
   int m_nInterestsSent;
+  int m_nPatternsSent;
   int m_nInterestsReceived;
   int m_nContentInconsistencies;
 
